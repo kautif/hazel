@@ -1,0 +1,60 @@
+body {
+	background: url('img/red_flannel.jpg');
+}
+
+.all-content {
+	width: 80%;
+	text-align: center;
+	background-color: white;
+	margin-left: 10%;
+	
+}
+
+.top-flex {
+	display: flex;
+}
+
+.logo {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	background-color: #9A1C1F;
+}
+
+.logo img {
+	width: 50%;
+	padding-top: 0%;
+}
+
+.contact {
+	width: 50%;
+	text-align: center;
+	background-color: #9A1C1F;
+	padding-top: 4%;
+}
+
+.contact p {
+	color: #FDAF17;
+	font-size: 1.5em;
+}
+
+.nav {
+	background-color: #0C0001;
+	
+}
+
+.nav li {
+	color: #FDAF17;	
+	font-size: 1.5em;
+}
+
+.nav ul {
+	display: inline-block;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav ul li {
+	display: inline;
+}
