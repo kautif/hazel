@@ -4,11 +4,10 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 		<title>Hazel's Back Porch BBQ</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="	sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="jquery/phone_nav.js"></script>
 
 	</head>
 		<body>
@@ -23,7 +22,7 @@
 						<p>(903) 394 - 8955</p>
 						<p>2117 E Maddox Ave</p>
 						<p>Fort Worth, TX 76104</p>
-						<a href="https://www.facebook.com/hazels.backporch"><img src="img/facebook.png" alt="Hazel's Facebook"></a>
+						<a href="https://www.facebook.com/hazels.backporch" target="_blank"><img src="img/facebook.png" alt="Hazel's Facebook"></a>
 					</div>
 
 				</div>
@@ -39,18 +38,67 @@
 				</div>
 
 				<div class="slideshow">
+					<div class="mySlides fade">
+					    <div class="numbertext">1 / 6</div>
+					    <img src="img/togo_tray.jpg" style="width:80%">
+					    <div class="text">Caption Text</div>
+				    </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">2 / 6</div>
+					    <img src="img/assorted_meats.jpg" style="width:80%">
+					    <div class="text">Caption Two</div>
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">3 / 6</div>
+					    <img src="img/chicken.jpg" style="width:80%">
+					    <div class="text">Caption Three</div>
+					  </div>
+
+					  <div class="mySlides fade">
+					    <div class="numbertext">4 / 6</div>
+					    <img src="img/ribs.jpg" style="width:80%">
+					    <div class="text">Caption Four</div>
+				    </div>
+
+				    <div class="mySlides fade">
+					    <div class="numbertext">5 / 6</div>
+					    <img src="img/three_meat.jpg" style="width:80%">
+					    <div class="text">Caption Five</div>
+				    </div>
+
+				    <div class="mySlides fade">
+					    <div class="numbertext">6 / 6</div>
+					    <img src="img/smokey_bbq.jpg" style="width:80%">
+					    <div class="text">Caption Six</div>
+				    </div>
+
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span> 
+					</div>
 
 				</div>
 
+
 				<h1>[Speciality tagline]</h1>
 
-				<img src="" alt="Hazel's Food Truck">
+				<img class="food_truck" src="img/food_truck.jpg" alt="Hazel's Food Truck">
 
 				<video>
 					
 
 				</video>
 			</div>
-
+		<script src="js/slide.js"></script>
 		</body>
 	</html>
