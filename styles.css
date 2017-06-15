@@ -1,11 +1,11 @@
 body {
-	background: url('img/red_flannel.jpg');
+	background: url('img/picnic_table.jpg');
 }
 
 .all-content {
 	width: 80%;
 	text-align: center;
-	background-color: white;
+	background: url('img/red_flannel.jpg');
 	margin-left: 10%;
 	
 }
@@ -30,12 +30,16 @@ body {
 	width: 50%;
 	text-align: center;
 	background-color: #9A1C1F;
-	padding-top: 4%;
+	padding-top: 0%;
 }
 
 .contact p {
 	color: #FDAF17;
-	font-size: 1.5em;
+	font-size: 1.25em;
+}
+
+.contact img {
+	width: 10%;
 }
 
 .nav {
@@ -53,6 +57,9 @@ body {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
 }
 
 .nav ul li {
@@ -62,14 +69,26 @@ body {
 * {box-sizing:border-box}
 
 /* Slideshow container */
+.slideshow-flex {
+	display: flex;
+	flex-direction: column;
+}
+
 .slideshow {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
   margin: auto;
 }
 
 .mySlides {
     display: none;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.mySlides img {
+	width: 100%;
 }
 
 /* Next & previous buttons */
@@ -87,10 +106,15 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
+.prev {
+	left: 4%;
+}
+
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 4%;
   border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -98,13 +122,17 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
+.dots {
+	margin-top: 15px;
+}
+
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: -20px;
   width: 100%;
   text-align: center;
 }
@@ -142,6 +170,80 @@ body {
   animation-duration: 1.5s;
 }
 
+.catering-quote {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	text-align: center;
+}
+
+input,
+textarea,
+select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+} 
+
+.quote-left span {
+	margin-top: 10px;
+}
+
+.quote-left input {
+	width: 100%;
+}
+
+.quote-right {
+	text-align: center;
+	margin-left: 20px;
+
+}
+
+.quote-right input,
+.quote-right textarea,
+.quote-right select {
+	width: 100%;
+	text-align: center;
+}
+
+.quote-right .submit {
+	margin-top: 20px;
+
+}
+
+.submit {
+	padding: 10px 20px;
+}
+
+.members-content {
+	display: flex;
+}
+
+.main-location {
+	padding-bottom: 40px;
+}
+
+#gmap {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+.history,
+.team {
+	width: 80%;
+	background-color: white;
+	padding: 10px;
+	text-align: left;
+
+}
+
+.content-heading {
+	text-align: center;	
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -152,6 +254,13 @@ body {
   to {opacity: 1}
 }
 
+.specialty {
+	background-color: white;
+	width: 50%;
+	margin-left: 24%;
+	padding: 20px;
+}
+
 @media (min-width: 1001px) {
 	.food_truck {
 		width: 80%;
@@ -160,7 +269,7 @@ body {
 
 @media (max-width: 1000px) {
 	.contact {
-		font-size: .5em;
+		font-size: .75em;
 	}
 
 	.contact img {
@@ -170,6 +279,82 @@ body {
 	.food_truck {
 		width: 80%;
 	}
+}
+
+@media (min-width: 801px) {
+	.sidenav,
+	span img {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.nav {
+		display: none;
+	}
+
+	span img {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+	}
+
+	.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #9A1C1F; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FDAF17;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.contact {
+	font-size: .6em;
+}
+
+.contact img {
+	width: 10%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 }
 
 @media (max-width: 600px) {
