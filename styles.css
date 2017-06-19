@@ -170,9 +170,20 @@ body {
   animation-duration: 1.5s;
 }
 
+.catering {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/kitchen.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.catering h1 {
+	color: white;
+}
+
 .catering-quote {
 	display: flex;
 	justify-content: center;
+	color: white
 }
 
 form {
@@ -190,8 +201,13 @@ select {
 	margin-top: 10px;
 }
 
-.quote-left input {
-	width: 100%;
+.quote-left input,
+.quote-middle input,
+.quote-right input,
+.quote-right textarea,
+.quote-right select {
+	width: 90%;
+	text-align: center;
 }
 
 .quote-right {
@@ -200,12 +216,6 @@ select {
 
 }
 
-.quote-right input,
-.quote-right textarea,
-.quote-right select {
-	width: 100%;
-	text-align: center;
-}
 
 .quote-right .submit {
 	margin-top: 20px;
@@ -222,6 +232,16 @@ select {
 
 .main-location {
 	padding-bottom: 40px;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/food_truck.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.main-location h1 {
+	margin-left: 35%;
+	margin-right: 35%;
+	color: white;
+	padding: 10px 5px;
 }
 
 #gmap {
@@ -231,10 +251,26 @@ select {
 	margin-bottom: 20px; 
 }
 
+.gallery {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+}
+
+.gallery h1 {
+	color: white;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.gallery img {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
 .history,
 .team {
 	width: 80%;
-	background-color: white;
+	
 	padding: 10px;
 	text-align: left;
 
@@ -242,6 +278,88 @@ select {
 
 .content-heading {
 	text-align: center;	
+}
+
+.members {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/truck_logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.members h1,
+.members-content {
+	color: white;
+}
+
+.team-pics {
+	display: flex;
+	justify-content: space-between;
+}
+
+.team-pics img {
+	width: 150px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption1 { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+.x {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.x:hover,
+.x:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @-webkit-keyframes fade {
