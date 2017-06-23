@@ -1,3 +1,8 @@
+<?php 
+
+require('../config.php');
+?>
+
 <!DOCTYPE html> 
 	<html>
 
@@ -14,7 +19,7 @@
 			<div class="all-content">
 				<div class="top-flex">
 					<div class="logo">
-						<img src="../img/hazel_bbq_logo.png" alt="Hazel's logo">
+						<a href="../index.html"><img src="../img/hazel_bbq_logo.png" alt="Hazel's logo"></a>
 					</div>
 
 					<div class="contact">
@@ -25,6 +30,18 @@
 					</div>
 
 				</div>
+
+				<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="">Menu</a>
+				  <a href="#">Catering</a>
+				  <a href="location.html">Find Us</a>
+				  <a href="gallery.html">Satisfied Customers</a>
+				  <a href="about.html">About Us</a> 
+				</div>
+
+				<!-- Use any element to open the sidenav -->
+				<span onclick="openNav()"><img src="../img/hamburger.png"></span>
 
 				<div class="nav">
 					<ul>
@@ -44,7 +61,7 @@
 						<h1>Catering Request Form</h1>
 					<div class="catering-quote">
 						<div class="quote-left">
-							<form>
+							<form method="POST" action="<?=getUrl('/php/menu_mail.php');?>">
 								<span>Business or Organization Name:</span><input required type="text" name="name"><br>
 								<span>Full Contact Name:</span><input required type="text" name="contact"><br>
 								<span>Phone:</span> <input required type="tel" name="phone"><br>
@@ -63,18 +80,19 @@
 						<div class="quote-right">
 							<span>Address of Event:</span><input required type="text" name="address"><br>
 							<span class="date">Desired Date:</span><input required type="date" name="date"><br>
-							<span class="call">Best time to Call:</span><br><select>
+							<span class="call">Best time to Call:</span><br><select name="call">
 												<option value="morning">Morning</option>
 												<option value="afternoon">Afternoon</option>
 												<option value="evening">Evening</option>	
 											</select><br>
-							<span>Additional Details:</span> <br><textarea></textarea><br>
+							<span>Additional Details:</span> <br><textarea name="more_details"></textarea><br>
 
 						</div>
 					</div>
 							<input class="submit" type="submit" value="SUBMIT"></input>
 						</form>
 				</div>
+				<script src="../js/slide.js"></script>
 		</body>
 	</html>
 

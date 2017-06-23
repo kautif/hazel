@@ -12,13 +12,13 @@ this.img.onclick = function(){
 var span = document.getElementsByClassName("x")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+/*span.onclick = function() { 
   modal.style.display = "none";
-} 
+} */
 
 
 function clickImage(event){
-	if(event.target.tagName == "IMG"){
+	if(event.target.className == "modalImg"){
 		var imageSrc = event.target.src;
 		 modal.style.display = "block";
     	 modalImg.src = imageSrc;

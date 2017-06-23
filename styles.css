@@ -1,5 +1,6 @@
 body {
 	background: url('img/picnic_table.jpg');
+	margin: 0;
 }
 
 .all-content {
@@ -42,14 +43,29 @@ body {
 	width: 10%;
 }
 
+button {
+	background-color: #FDAF17;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+	border-radius: 10px;
+	font-size: 1.25em;
+}
+
 .nav {
 	background-color: #0C0001;
 	
 }
 
-.nav li {
-	color: #FDAF17;	
+.nav a {
+	color: #FDAF17;
 	font-size: 1.5em;
+	text-decoration: none;	
+}
+
+.nav a:hover {
+	color:white;
 }
 
 .nav ul {
@@ -362,6 +378,52 @@ select {
     cursor: pointer;
 }
 
+.footer {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px; 
+}
+
+.footer h3 {
+	color: white;
+}
+
+.f-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.footer a {
+	color: #FDAF17;
+	text-decoration: none;
+}
+
+.footer li {
+	margin-top: 10px;
+}
+
+.delivery {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center; 
+}
+
+.creator {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.creator span {
+	color: white;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -454,10 +516,12 @@ select {
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
+.catering {
+	background-attachment: fixed;
+}
+
+.catering-quote {
+	flex-wrap: wrap;
 }
 
 .contact {
@@ -497,4 +561,22 @@ select {
 		width: 100%;
 	}
 
+	.modal-content {
+		width: 50%;
+	}
+
+	.footer {
+		flex-direction: column;
+	}
+
+	.creator {
+		text-align: center; 
+	}
+
+}
+
+@media (max-width: 425px){
+	.modal-content {
+		width: 65%;
+	}
 }
