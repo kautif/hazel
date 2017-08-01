@@ -29,7 +29,7 @@
 				<div id="mySidenav" class="sidenav">
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  <a href="menu.php">Menu</a>
-				  <a href="#">Catering</a>
+				  <a href="menu.php">Catering</a>
 				  <a href="location.html">Find Us</a>
 				  <a href="gallery.html">Satisfied Customers</a>
 				  <a href="about.html">About Us</a> 
@@ -37,11 +37,13 @@
 
 				<!-- Use any element to open the sidenav -->
 				<span onclick="openNav()"><img src="../img/hamburger.png"></span>
+				
+				<a href="#delivery"><button class="delivery-btn"><b>WE DELIVER</b></button></a>
 
 				<div class="nav">
 					<ul>
 						<li><a href="menu.php">Menu</a></li>
-						<li><a href="#">Catering</a></li>
+						<li><a href="menu.php">Catering</a></li>
 						<li><a href="location.html">Find Us</a></li>
 						<a href="gallery.html">Satisfied Customers</a>
 						<li><a href="about.html">About Us</a></li>
@@ -56,7 +58,33 @@
 						<h1>Catering Request Form</h1>
 						<h2>Your form has been submitted. We will follow up with you shortly.</h2>
 				</div>
-				<script src="../js/slide.js"></script>
+
+				<div class="footer">
+					<ul class="f-menu">
+						<h3>NAVIGATION</h3>
+						<li><a href="menu.php">Menu</a></li>
+						<li><a href="menu.php">Catering</a></li>
+						<li><a href="location.html">Find Us</a></li>
+						<li><a href="gallery.html">Satisfied Customers</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+
+					<ul class="delivery" id="delivery">
+					<h3>WE DELIVER</h3>
+						<li><a href="https://www.ubereats.com" target="_blank"><img src="../img/ubereats.png" alt="Uber Eats"></a></li>
+						<li><a href="https://favordelivery.com" target="_blank"><img src="../img/favor.jpg" alt="Favor"></a></li>
+						<li><a href="https://postmates.com" target="_blank"><img src="../img/postmates.png" alt="Postmates"></a></li>
+						<li><a href="https://www.grubhub.com/" target="_blank"><img src="../img/grubhub.png" alt="Grubhub"></a></li>
+						<li><a href="https://www.doordash.com/store/120248/?utm_source=partner-link&utm_medium=website&utm_campaign=120248" target="_blank"><img src="../img/doordash.jpg" alt="Door Dash"></a></li>
+					</ul>
+
+				<div class="creator">
+					<span>Created by <a href="www.kautif.com">Autif Kamal</a></span>
+
+				</div>
+
+			</div>
+				<script src="../js/sidenav.js"></script>
 		</body>
 	</html>
 

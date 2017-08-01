@@ -29,22 +29,24 @@
 				<div id="mySidenav" class="sidenav">
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  <a href="menu.php">Menu</a>
-				  <a href="#">Catering</a>
+				  <a href="menu.php">Catering</a>
 				  <a href="location.html">Find Us</a>
 				  <a href="gallery.html">Satisfied Customers</a>
-				  <a href="about.html">About Us</a> 
+				  <a href="#">About Us</a> 
 				</div>
 
 				<!-- Use any element to open the sidenav -->
 				<span onclick="openNav()"><img src="../img/hamburger.png"></span>
 
+				<a href="#delivery"><button class="delivery-btn"><b>WE DELIVER</b></button></a>
+
 				<div class="nav">
 					<ul>
 						<li><a href="menu.php">Menu</a></li>
-						<li><a href="">Catering</a></li>
+						<li><a href="menu.php">Catering</a></li>
 						<li><a href="location.html">Find Us</a></li>
 						<a href="gallery.html">Satisfied Customers</a>
-						<li><a href="">About Us</a></li>
+						<li><a href="#">About Us</a></li>
 					</ul>
 				</div>
 				<div class="members">
@@ -52,27 +54,46 @@
 
 					<div class="members-content">
 						<div class="history">
-							<h1 class="content-heading">Our History</h1>
+							<h2 class="content-heading">Our History</h2>
 							<p>We decided to start a mobile BBQ business in an effort to spread our love of smoked meats with the rest of the DFW area and beyond. Our family has a rich history of pit –mastering since the 1940’s. As native East Texans we have perfected techniques that have been passed down through the generations. Our family has catered <b>family reunions, private parties, and special events</b> throughout the decades. We once owned an old hamburger shop in Stop Six at Truman and Stalcup which served as the brain behind our Hazel’s Back porch today. All of these have experiences shaped the way we want to share our food with you. Presently, we never stop smoking the pit and we use our skills of pit-mastery and down home cooking to bring you the favors of East Texas. <b>We hope to serve our community with the best product while keeping your wallet full and your stomach too!</b></p>
 						</div>
 
 						<div class="team">
-							<h1 class="content-heading">Our Team</h1>
+							<h2 class="content-heading">Our Team</h2>
 							<p>Our team is family.  We have friends, cousins, uncles, nieces and nephews that joined in the effort to serve on the back porch.  We have all rallied around this truck as our common through it to ensure we are pit perfect.  We have service member, realtors, social workers, teachers, technicians, professionals business to innovate evaluate each process.  We continue to work collectively through the heat and smokey meat to drive Hazel’s back porch to success. Our back porch would not be what it is today without the help of our family. </p>
-							<div class="team-pics">
-								<img src="../img/collage/hazel_crop.jpg" alt="">
-								<img src="../img/collage/black_elder_crop.jpg" alt="">
-								<img src="../img/collage/cook_pair.jpg" alt="">
-							</div>
-
-							<div class="team-pics">
-								<img src="../img/collage/police_byclists_crop.jpg" alt="">
-								<img src="../img/collage/red_skinny_crop.jpg" alt="">
-								<img src="../img/collage/xavier_back_crop.jpg" alt="">
-							</div>
 
 						</div>
 					</div>
+							<div class="team-pics">
+								<h2>Our Staff at Work</h2>
+							</div>
+
+						<div class="team-flex-lvl2">
+
+						<div id="myModal" class="modal">
+
+						  <!-- The Close Button -->
+						  <span class="x" onclick="document.getElementById('myModal').style.display='none'" style="color:white;">&times;</span>
+
+					  <!-- Modal Content (The Image) -->
+						  <img class="modal-content" id="img0">
+
+					  <!-- Modal Caption (Image Text) -->
+						  <div id="caption" style="text-align: center;"></div>
+						</div>
+
+							<div class="team-pics">
+								<img id= "myImg" class="modalImg" src="../img/collage/hazel_crop.jpg" alt="">
+								<img class="modalImg" src="../img/collage/black_elder_crop.jpg" alt="">
+								<img class="modalImg" src="../img/collage/cook_pair.jpg" alt="">
+							</div>
+
+							<div class="team-pics">
+								<img class="modalImg" src="../img/collage/police_byclists_crop.jpg" alt="">
+								<img class="modalImg" src="../img/collage/red_skinny_crop.jpg" alt="">
+								<img class="modalImg" src="../img/xavier.jpg" alt="">
+							</div>
+						</div>
 				</div>
 
 			</div>
@@ -90,6 +111,33 @@
 				</div>
 				
 			</div>
-			<script src="../js/slide.js"></script>
+
+			<div class="footer">
+					<ul class="f-menu">
+						<h3>NAVIGATION</h3>
+						<li><a href="menu.php">Menu</a></li>
+						<li><a href="menu.php">Catering</a></li>
+						<li><a href="location.html">Find Us</a></li>
+						<li><a href="gallery.html">Satisfied Customers</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+
+					<ul class="delivery" id="delivery">
+					<h3>WE DELIVER</h3>
+						<li><a href="https://www.ubereats.com" target="_blank"><img src="../img/ubereats.png" alt="Uber Eats"></a></li>
+						<li><a href="https://favordelivery.com" target="_blank"><img src="../img/favor.jpg" alt="Favor"></a></li>
+						<li><a href="https://postmates.com" target="_blank"><img src="../img/postmates.png" alt="Postmates"></a></li>
+						<li><a href="https://www.grubhub.com/" target="_blank"><img src="../img/grubhub.png" alt="Grubhub"></a></li>
+						<li><a href="https://www.doordash.com/store/120248/?utm_source=partner-link&utm_medium=website&utm_campaign=120248" target="_blank"><img src="../img/doordash.jpg" alt="Door Dash"></a></li>
+					</ul>
+
+				<div class="creator">
+					<span>Created by <a href="www.kautif.com">Autif Kamal</a></span>
+
+				</div>
+
+			</div>
+			<script src="../js/sidenav.js"></script>
+			<script src="../js/imgmodal.js"></script>
 		</body>
 	</html>

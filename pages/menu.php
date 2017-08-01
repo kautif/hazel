@@ -33,7 +33,7 @@ require('../config.php');
 
 				<div id="mySidenav" class="sidenav">
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				  <a href="">Menu</a>
+				  <a href="#">Menu</a>
 				  <a href="#">Catering</a>
 				  <a href="location.html">Find Us</a>
 				  <a href="gallery.html">Satisfied Customers</a>
@@ -42,6 +42,8 @@ require('../config.php');
 
 				<!-- Use any element to open the sidenav -->
 				<span onclick="openNav()"><img src="../img/hamburger.png"></span>
+
+				<a href="#delivery"><button class="delivery-btn"><b>WE DELIVER</b></button></a>
 
 				<div class="nav">
 					<ul>
@@ -54,7 +56,7 @@ require('../config.php');
 				</div>
 
 				<div class="menu">
-					<h1></h1>
+					<a target="_blank" href="https://drive.google.com/file/d/0B7gr62k1jGTuOThVUG1hbEtaNEU/view?usp=sharing"><button>View Menu</button></a>
 				</div>
 
 				<div class="catering">
@@ -66,14 +68,68 @@ require('../config.php');
 								<span>Full Contact Name:</span><input required type="text" name="contact"><br>
 								<span>Phone:</span> <input required type="tel" name="phone"><br>
 								<span>Email:</span><input required type="email" name="email"><br>
-						
+								<span>Number of Guests</span><input required type="number" name="guests"><br>
 						</div>
 
 						<div class="quote-middle">
-							<span>Number of Guests</span><input required type="number" name="guests"><br>
-							<span>Meats</span><input type="text" name="meats"><br>
-							<span>Sides</span><input type="text" name="sides"><br>
-							<span>Desserts</span><input type="text" name="desserts"><br>
+							<span class="meat">Meats 1</span><select type="text" name="meats1">
+								<option>Brisket</option>
+								<option>Pork Spare Ribs</option>
+								<option>Turkey Breast</option>
+								<option>Garlic Sausage</option>
+								<option>Polish Sausage</option>
+								<option>Sausage Link</option>
+							</select><br>
+							<span class="meat">Meats 2</span><select type="text" name="meats2">
+								<option>Brisket</option>
+								<option>Pork Spare Ribs</option>
+								<option>Turkey Breast</option>
+								<option>Garlic Sausage</option>
+								<option>Polish Sausage</option>
+								<option>Sausage Link</option>
+							</select><br>
+							<span class="meat">Meats 3</span><select type="text" name="meats3">
+								<option>Brisket</option>
+								<option>Pork Spare Ribs</option>
+								<option>Turkey Breast</option>
+								<option>Garlic Sausage</option>
+								<option>Polish Sausage</option>
+								<option>Sausage Link</option>
+							</select><br>
+							<span class="sides">Sides 1</span><select type="text" name="sides1">
+								<option>Baked Beans</option>
+								<option>Pinto Beans</option>
+								<option>Cole Slaw</option>
+								<option>Potato Salad</option>
+								<option>Mac n' Cheese</option>
+								<option>Lay's Classsic Chips</option>
+
+							</select><br>
+
+							<span class="sides">Sides 2</span><select type="text" name="sides2">
+								<option>Baked Beans</option>
+								<option>Pinto Beans</option>
+								<option>Cole Slaw</option>
+								<option>Potato Salad</option>
+								<option>Mac n' Cheese</option>
+								<option>Lay's Classsic Chips</option>
+
+							</select><br>
+
+							<span class="sides">Sides 3</span><select type="text" name="sides3">
+								<option>Baked Beans</option>
+								<option>Pinto Beans</option>
+								<option>Cole Slaw</option>
+								<option>Potato Salad</option>
+								<option>Mac n' Cheese</option>
+								<option>Lay's Classsic Chips</option>
+
+							</select><br>
+							<span class="desserts">Desserts</span><select type="text" name="desserts">
+								<option>Banana Pudding</option>
+								<option>Cake</option>
+								<option>Peach Cobbler</option>
+							</select><br>
 
 						</div>
 
@@ -92,7 +148,33 @@ require('../config.php');
 							<input class="submit" type="submit" value="SUBMIT"></input>
 						</form>
 				</div>
-				<script src="../js/slide.js"></script>
+
+				<div class="footer">
+					<ul class="f-menu">
+						<h3>NAVIGATION</h3>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Catering</a></li>
+						<li><a href="location.html">Find Us</a></li>
+						<li><a href="gallery.html">Satisfied Customers</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+
+					<ul class="delivery" id="delivery">
+					<h3>WE DELIVER</h3>
+						<li><a href="https://www.ubereats.com" target="_blank"><img src="../img/ubereats.png" alt="Uber Eats"></a></li>
+						<li><a href="https://favordelivery.com" target="_blank"><img src="../img/favor.jpg" alt="Favor"></a></li>
+						<li><a href="https://postmates.com" target="_blank"><img src="../img/postmates.png" alt="Postmates"></a></li>
+						<li><a href="https://www.grubhub.com/" target="_blank"><img src="../img/grubhub.png" alt="Grubhub"></a></li>
+						<li><a href="https://www.doordash.com/store/120248/?utm_source=partner-link&utm_medium=website&utm_campaign=120248" target="_blank"><img src="../img/doordash.jpg" alt="Door Dash"></a></li>
+					</ul>
+
+				<div class="creator">
+					<span>Created by <a href="www.kautif.com">Autif Kamal</a></span>
+
+				</div>
+
+			</div>
+			<script src="../js/sidenav.js"></script>
 		</body>
 	</html>
 

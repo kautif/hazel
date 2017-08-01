@@ -43,7 +43,7 @@ body {
 	width: 10%;
 }
 
-button {
+.delivery-btn {
 	background-color: #FDAF17;
 	position: fixed;
 	top: 0px;
@@ -140,12 +140,12 @@ button {
 
 .dots {
 	margin-top: 15px;
+	margin-bottom: 20px !important;
 }
 
 /* Caption text */
 .text {
   color: black;
-  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: -20px;
@@ -186,6 +186,25 @@ button {
   animation-duration: 1.5s;
 }
 
+.menu-flex {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.menu button {
+	margin-top: 20px;
+	padding: 20px 15px;
+	font-size: 1.25em;
+	background-color: #FDAF17;
+	font-weight: bolder;
+}
+
+td,
+th {
+	padding-right: 40px; 
+}
+
 .catering {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/kitchen.jpg');
 	background-repeat: no-repeat;
@@ -212,6 +231,12 @@ select {
 	margin-top: 10px;
 	margin-bottom: 10px;
 } 
+
+.meat,
+.sides,
+.desserts {
+	margin-right: 20px;
+}
 
 .quote-left span {
 	margin-top: 10px;
@@ -267,6 +292,24 @@ select {
 	margin-bottom: 20px; 
 }
 
+.location-details {
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 92%;
+}
+
+.location-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.hours p {
+	color: white !important;
+}
+
 .gallery {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
 }
@@ -300,6 +343,7 @@ select {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/truck_logo.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	padding-bottom: 40px;
 }
 
 .members h1,
@@ -310,12 +354,22 @@ select {
 .team-pics {
 	display: flex;
 	justify-content: space-between;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.team-pics h2 {
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
 }
 
 .team-pics img {
 	width: 150px;
 	height: 200px;
 	margin-top: 20px;
+	border-radius: 12%;
 }
 
 .modal {
@@ -448,6 +502,10 @@ select {
 }
 
 @media (max-width: 1000px) {
+	button {
+		font-size: .9em;
+	}
+
 	.contact {
 		font-size: .75em;
 	}
@@ -459,6 +517,10 @@ select {
 	.food_truck {
 		width: 80%;
 	}
+
+	.team-pics {
+		width: 87%;
+	}
 }
 
 @media (min-width: 801px) {
@@ -469,6 +531,11 @@ select {
 }
 
 @media (max-width: 800px) {
+	button {
+		font-size: .7em;
+		padding: 10px 5px;
+	}
+
 	.nav {
 		display: none;
 	}
@@ -486,7 +553,7 @@ select {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #9A1C1F; /* Black*/
+    background-color: rgba(0,0,0,.8); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -532,6 +599,29 @@ select {
 	width: 10%;
 }
 
+#gmap {
+	width: 100% !important;
+}
+
+.location-details {
+	flex-direction: column;
+}
+
+.location-flex {
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.members-content {
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-pics img {
+	width: 100px;
+	height: 150px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -557,12 +647,21 @@ select {
 		display: none;
 	}
 
+	.delivery-btn {
+		padding: 5px;
+		font-size: 1em; 
+	}
+
 	.food_truck {
 		width: 100%;
 	}
 
 	.modal-content {
 		width: 50%;
+	}
+
+	.main-location {
+		background-attachment: fixed;
 	}
 
 	.footer {
@@ -573,10 +672,52 @@ select {
 		text-align: center; 
 	}
 
+	.location-details {
+		width: 100%;
+	}
+
+	.location-flex {
+		width: 60%;
+	}
+
 }
 
 @media (max-width: 425px){
+	.delivery-btn {
+		font-size: .7em;
+	}
+
+	.catering h1 {
+		font-size: 1.25em;
+	}
+
+	.main-location h1 {
+		margin: 0%;
+	}
+
+	.gallery h1 {
+		font-size: 1.5em;
+		margin: 0%;
+	}
+
+	.team-flex-lvl2 {
+		margin-left: 8% !important;
+	}
+
 	.modal-content {
 		width: 65%;
+	}
+
+	.members p {
+		font-size: .8em;
+	}
+
+	.team-flex-lvl2 {
+		display: flex;
+		margin-left: 14%;
+	}
+
+	.team-flex-lvl2 .team-pics {
+		flex-direction: column;
 	}
 }
