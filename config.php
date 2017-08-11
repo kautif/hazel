@@ -2,7 +2,7 @@
 
 function getUrl($path)
 {
-	$baseUrl = "http://www.kautif.com/hazel";
+	$baseUrl = "http://www.hazelsbackporch.com";
 	return $baseUrl . $path;
 }
 

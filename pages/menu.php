@@ -26,7 +26,7 @@ require('../config.php');
 						<p>(903) 394 - 8955</p>
 						<p>2117 E Maddox Ave</p>
 						<p>Fort Worth, TX 76104</p>
-						<a href="https://www.facebook.com/hazels.backporch" target="_blank"><img src="../img/facebook.png" alt="Hazel's Facebook"></a>
+						<a href="https://www.facebook.com/HBPBBQ/?ref=bookmarks" target="_blank"><img src="../img/facebook.png" alt="Hazel's Facebook"></a>
 					</div>
 
 				</div>
@@ -47,7 +47,7 @@ require('../config.php');
 
 				<div class="nav">
 					<ul>
-						<li><a href="">Menu</a></li>
+						<li><a href="#">Menu</a></li>
 						<li><a href="#">Catering</a></li>
 						<li><a href="location.html">Find Us</a></li>
 						<a href="gallery.html">Satisfied Customers</a>

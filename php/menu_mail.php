@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   		exit;
   }
 
-	$to = 'kautif@gmail.com';
+	$to = 'hazel.prophete@gmail.com';
 	$subject = "Back Porch BBQ Catering Inquiry";				
 	$txt = "Business or Organization Name: {$_POST['name']}<br> Full Contact Name: {$_POST['contact']} <br> Phone: {$_POST['phone']} <br> Email: {$_POST['email']} <br> Guests: {$_POST['guests']} <br> Meats 1: {$_POST['meats1']} <br> Meats 2: {$_POST['meats2']} <br> Meats 3: {$_POST['meats3']} <br> Sides 1: {$_POST['sides1']} <br> Sides 2: {$_POST['sides2']} <br> Sides 3: {$_POST['sides3']} <br> Desserts: {$_POST['desserts']} <br> Address of Event: {$_POST['address']} <br> Desired Date: {$_POST['date']} <br> Best Time to Call: {$_POST['call']} <br> Additional Details: {$_POST['more_details']}";
 	$headers = "From: Hazel Prophete <noreply@gmail.com'>\r\n";
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 	$success=mail($to,$subject,$txt,$headers);
 	if ($success) {
-		$BASE_URL = 'http://www.kautif.com/hazel';
+		$BASE_URL = 'http://www.hazelsbackporch.com';
 		header("Location: $BASE_URL/pages/phpreceive.html"); // Use to make a confirmation page
 		echo htmlspecialchars($_SERVER["PHP_SELF"]);
 	} else {
